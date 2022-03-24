@@ -22,6 +22,8 @@ https://github.com/forlilab/bottchscore
 some small fixes and enabled running as a function in another script
 kind of slow because you need to read from sdf file rather than rdkit mol objects
 maybe there's an easy fix but IDK how to fix it...so this works
+Also getting weird out of memory OB errors (limited#)...not sure why
+because output looks good
 '''
 
 import sys
