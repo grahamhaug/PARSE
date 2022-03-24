@@ -7,6 +7,13 @@ from rdkit.Chem import Descriptors
 from rdkit.Chem import Lipinski
 import BottchScore
 
+'''
+Parses sdf file containing sulfinate salts
+-removes metal from the salt
+-replaces SOOH with SH
+-Outputs a csv with smiles/inchi/MW/FSP3/BottchScore,etc.
+'''
+
 #specify SDF file containing sulfinate salts
 fileName = 'sulfinate_salts_combined.sdf'
 
