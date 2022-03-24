@@ -8,9 +8,6 @@ Outputs new SDF with user-selected # of mols
 #specify the input sdf
 input_sdf = 'Sulfinate_Salts/Substance_20220322_1912_Li500.sdf'
 
-#ask user for an output name - will create example.png in local dir. 
-output_sdf = input("\nEnter desired filename for output sdf: ")
-
 #this delimiter at end of each mol definition
 target_string = '$$$$'
 
@@ -21,6 +18,9 @@ with open(input_sdf, 'rt') as input_text:
 
 #report how many molecules were found
 print(f'\nCounted {count} molecules in {input_sdf}')
+
+#ask user for an output name - will create example.png in local dir. 
+output_sdf = input("\nEnter desired filename for output sdf: ")
 
 #user selects how many molecules to retain
 retain_prompt = "\nHow many molecules (int) to include in final sdf? "
