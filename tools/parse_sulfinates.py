@@ -10,7 +10,8 @@ import BottchScore
 '''
 Parses sdf file containing sulfinate salts
 -removes metal from the salt
--replaces SOOH with SH
+-replaces SOOH with SH - probably better to replace with B 
+or something less common than SH
 -Outputs a csv with smiles/inchi/MW/FSP3/BottchScore,etc.
 '''
 
