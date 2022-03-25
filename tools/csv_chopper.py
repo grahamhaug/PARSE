@@ -9,7 +9,6 @@ Makes a new csv from the truncated dataset
 '''
 
 def csv_chopper():
-
 	#pull in an existing csv
 	incoming_csv = pd.read_csv('xinchi_cacids.csv')
 
