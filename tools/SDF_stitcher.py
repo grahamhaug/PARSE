@@ -1,7 +1,7 @@
 import os
 '''
 Reads all files with .sdf extension in current directory
-Outputs a new sdf file containing all of the located sdf files
+Outputs a new sdf containing all of the located sdfs
 '''
 
 sdf_files = [file for file in os.listdir('.') if os.path.isfile(file) and file.endswith('.sdf')]
