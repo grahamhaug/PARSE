@@ -1,7 +1,7 @@
 import os
 '''
 Reads in a raw SDF
-Chops # of molecules off the end of input SDF file
+Chops # of molecules off the end of input SDF
 Outputs new SDF with user-selected # of mols
 '''
 
@@ -11,7 +11,7 @@ input_sdf = 'Sulfinate_Salts/Substance_20220322_1912_Li500.sdf'
 #this delimiter at end of each mol definition
 target_string = '$$$$'
 
-#determine how many molecules are in the SDF file
+#determine how many molecules are in the SDF
 with open(input_sdf, 'rt') as input_text:
 	contents = input_text.read()
 	count = contents.count(target_string)
