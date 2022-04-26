@@ -8,6 +8,15 @@ from matplotlib.colors import ListedColormap
 from scipy.stats import gaussian_kde
 from matplotlib.colors import LinearSegmentedColormap
 
+"""
+- Reads in MW, Fsp3, Bottcher data from CSV
+- Calculates density of points via KDE 
+- Outputs a 3D scatter plot of MW, Fsp3, Bottcher data
+- Density via PDF is plotted as colormap in 4th dim
+- Outputs some colorbars to communicate KDE
+- Tools at the bottom to output many figures at once (viewing angles)
+"""
+
 ### Data Import ###
 ### SciFinder Sulfoxide Data ###
 sf_name = 'properties_sulfoxides_scifi.csv'
