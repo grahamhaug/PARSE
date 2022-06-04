@@ -8,8 +8,6 @@ from rdkit.Chem import Descriptors
 '''
 - Reads incoming SD file and converts each mol to SMILE
 - Excludes any SMILE with MW > 1000 MU
-- Replaces COOH's with dummy atom(s) * to mark connectivity
-- Verifies that each processed SMILE has a * point of connectivity
 - outputs the processed SMILEs to a .csv 
 '''
 
