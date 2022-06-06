@@ -1,6 +1,7 @@
 # ChemDataSci
 Python tools for mapping chemical space.
 Technical Supplemental Information for DOI: 
+This repo contains the Python code and data for reproducing the results within the above article. Each python script contains details for use and sample output files.
 
 Sulfoxide SMILES can be generated from SMILES of carboxylic acids and sulfinic salts by designating linkages within the substructure SMILEs. For instance, COOH groups of carboxylic acids or 'S(=O)O' within sulfinates can be converted to "joints"  and then combined to designate sulfoxides:
 
