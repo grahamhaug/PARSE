@@ -13,7 +13,7 @@ Once prepared, the two sets of substructures are systematically combined to gene
 ![image](https://user-images.githubusercontent.com/49004818/172219395-a4199b4c-9e41-4287-af4c-60c592f2fa62.png)
 ![image](https://user-images.githubusercontent.com/49004818/172219417-bb1fd827-e8f8-4fc5-a644-156cc43da0b4.png)
 
-Chemical descriptors for molecular complexity are then calculated for each sulfoxide: molecular weight (MW), fraction of SP3-hybridized carbon atoms (FSP3), and Bottcher Complexity (Cm): The set of generated sulfoxides can then be plotted relative to the set of known sulfoxides in various manners:
+Chemical descriptors for molecular complexity are then calculated for each sulfoxide: molecular weight (MW), fraction of SP3-hybridized carbon atoms (FSP3), and Bottcher Complexity (Cm, calculated with a modified version of the Forli group's BottchScore: https://github.com/forlilab/bottchscore): The set of generated sulfoxides can then be plotted relative to the set of known sulfoxides in various manners:
 
 First, as a 3D scatter plot colored according to density of structures:
 
