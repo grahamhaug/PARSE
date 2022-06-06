@@ -130,13 +130,13 @@ for csv_file in csv_files:
 	Bscore = BottchScore.runBS('testmols.sdf')
 
 	#write data to a CSV
-	outData = pd.DataFrame(columns=['Number', 'SMILEs', 'NumAtoms', 'MW', 'FSP3', 'Bottcher'])
+	outData = pd.DataFrame(columns=['Number', 'SMILEs', 'NumAtoms', 'MW', 'FSP3', 'Cm'])
 	outData['Number'] = numData
 	outData['SMILEs'] = good_smiles
 	outData['NumAtoms'] = numAtoms
 	outData['MW'] = molWeights
 	outData['FSP3'] = molFPS3s
-	outData['Bottcher'] = Bscore
+	outData['Cm'] = Bscore
 	outData.to_csv(f'{fileName}_CalcdProps.csv', index=False)
 
 
