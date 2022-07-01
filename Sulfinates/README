@@ -18,3 +18,6 @@ Calculate_Complexity_Descriptors.py
 Functions_for_PropCalc.py
 - Functions read/required by Calculate_Complexity_Descriptors.py
 - Requires BotchScore.py (modified from Dr. Forli group's work: https://github.com/forlilab/bottchscore)
+
+Sulfinate data was manually examined and (viets_omits.csv) and bad structures omitted. For other compounds,
+this process was automated. 
