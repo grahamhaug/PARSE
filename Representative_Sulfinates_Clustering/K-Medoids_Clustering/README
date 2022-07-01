@@ -1,1 +1,21 @@
-f
+Python scripts for performing repeated runs of K-Medoids clustering for selection of 27 representative sulfinates
+
+ClusterValidation_sel27_KMedoids_minmaxed.py
+- Perform 50 runs of K-Medoids clustering for 27 sulfinates using normalized scaling
+- Report Silhouette scores for each run
+- Representative Sulfinates are the medoids of each K-Medoids run
+- Calculate min/max/avg pairwise distances for selected sulfinates
+- Plot an image of the clustering (kmedoids_n27_minmaxed_sulfinates_12.png)
+- Output the selected sulfinates to a csv file (selected_sulfinates_12_minmax.csv)
+- Output an image of the selected sulfinates (kmedoids_minimax-12.png)
+- Output a summary of the clustering performance across repeated runs (KMedoids_Sampling_Performance-minimaxed.csv)
+
+ClusterValidation_sel27_KMedoids_standardized.py
+- Perform 50 runs of K-Medoids clustering for 27 sulfinates using standard scaler
+- Report Silhouette scores for each run
+- Representative Sulfinates are the medoids of each K-Medoids run
+- Calculate min/max/avg pairwise distances for selected sulfinates
+- Plot an image of the clustering (kmeans_n27_standardized_sulfinates_15.png)
+- Output the selected sulfinates to a csv file (selected_sulfinates_15_standardized.csv)
+- Output an image of the selected sulfinates (kmedoids_standardized-15.png)
+- Output a summary of the clustering performance across repeated runs (KMedoids_Sampling_Performance-standardized.csv)
