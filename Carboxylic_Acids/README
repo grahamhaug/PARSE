@@ -26,3 +26,8 @@ Functions_for_PropCalc.py
 - Requires BotchScore.py (modified from Dr. Forli group's work: https://github.com/forlilab/bottchscore)
 
 Only MonoSubstituted carboxylic acids were utilized for the generation of sulfoxides. 
+
+Acid_Sampler.py
+- Retains representative samples from primary/secondary/tertiary CAs (0.25% sampling rate)
+- Combines the sampled acids into a down-sampled .csv
+- These acids were utilized for construction of the final generated data set. 
