@@ -48,8 +48,8 @@ class BottchScore:
         """
         self.converter = ob.OBConversion()
         self.converter.SetOutFormat('smi')
-        self.verbose=verbose
-        self.debug=debug
+        self.verbose=False
+        self.debug=False
         # SMARTS patterns used to assign mesomeric properties to groups
         self._mesomery_patterns = {
                 # SMARTS_pattern : [equivalent atoms idx list, contribution ]
