@@ -1,0 +1,19 @@
+Directory containing Python scripts and example output data for evaluated clustering methods
+
+Agglomerative_Clustering
+- hierarchical Agglomerative Clustering using SciKit Learn
+
+K-Means_Clustering
+- K-Means Clustering using SciKit Learn
+
+K-Medoids_Clustering
+- K-Medoids Clustering using SciKit Learn
+
+SimpleRandomSampling
+- 10,000 samples of 27 sulfinates
+- Evaluation of min/max/avg pairwise distances
+
+Clustering_Summary.xlsx
+- Excel file containing a summary of all clustering methods employed
+- Silhouette Scores for clustering methods
+- Pairwise distances for each clustering method
