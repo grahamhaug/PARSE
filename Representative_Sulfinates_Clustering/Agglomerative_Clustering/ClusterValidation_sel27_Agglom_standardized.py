@@ -14,18 +14,16 @@ from rdkit import Chem
 from rdkit.Chem import Draw
 
 """
-- Perform 50 K-Means clustering runs and perfrom pairwise distance calcs.
+- Perform 1 Agglomerative clustering run and perfrom pairwise distance calcs.
 - Reads in a 'properties' csv file containing SMILEs, MW, FSP3, Cm data 
 - Standardizes data if it isn't already (optionally outputs .csv)
-- Calculates Silhouette score and Min/Avg/Max pairwise distance for each run
+- Calculates Silhouette score and Min/Avg/Max pairwise distance
 - Outputs the results of each run to a single summary csv
 - This script also will plot the data and gen a csv for each run with selected sulfs.
-- This latter bit can be annoying over many runs, so comment out as needed
 """
 
 #import set of sulfinate residues containing unscaled calc. props
 import_file_name = 'PubChem_Sulfinates.csv'
-
 
 ### Standardize Data ### 
 #Check if a csv containing standardized data already exists in local dir
@@ -56,7 +54,6 @@ else: #if no, make one from import_file_name.
 
 prepped_data = incoming_data.iloc[:,2:5].values
 
-
 ### Prepare the Model ### 
 #assign a number of clusters
 nclusters = 27
@@ -66,13 +63,11 @@ model = AgglomerativeClustering(n_clusters=nclusters, affinity='euclidean', link
 model = model.fit(prepped_data)
 clusters = model.labels_
 
-
 ### Silhouette Score ### 
 s_scores = []
 reporting = metrics.silhouette_score(prepped_data, clusters, metric='euclidean')
 print(f'Silhouette Score: {reporting}')
 s_scores.append(reporting)
-
 
 ### Separate data by clusters ###
 #Add a column with each SMILEs' cluster #
@@ -121,7 +116,6 @@ for index in closest_pt_idx:
 
 representative_sulfinates.to_csv(f'Selected_Sulfinates.csv', index=False, header=True)
 
-
 ### Output Image and SD File for Selected Sulfinates ### 
 smiles_data = pd.read_csv(f'Selected_Sulfinates.csv', usecols=['SMILEs'])
 selected_smiles = smiles_data['SMILEs'].to_list()
@@ -142,7 +136,6 @@ for x in range(1,len(mols)+1):
 
 image = Draw.MolsToGridImage(mols, molsPerRow=4, subImgSize=(550, 350), legends=[f'{x}' for x in num_list])
 image.save(f'Selected_Sulfinates.png')
-
 
 ### Plotting the data ### 
 # #initialize a 3D plot
@@ -208,7 +201,6 @@ avgs.append(d.mean())
 
 #just 1 run in agglom
 iterate = 1
-
 
 ### Output Summary CSV ###
 #this DF summarizes results
