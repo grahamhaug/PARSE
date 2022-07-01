@@ -1,0 +1,13 @@
+Python scripts for evaluation of SRS sampling and pairwise distances
+
+ClusterValidation_SRS_27_Sulfinates_minimaxed.py
+- Apply MinMaxScalar (normalization) to the calculated data
+- Perform 10,000 samples of 27 sulfinates without replacement
+- Evaluate Pairwise Distance metrics (minimum, maximum, average) for each sample
+- Output the data to a summary .csv (Random_Sampling_Performance_Minimaxed.csv)
+
+ClusterValidation_SRS_27_Sulfinates_standardized.py
+- Apply StandardScaler (standardization) to the calculated data
+- Perform 10,000 samples of 27 sulfinates without replacement
+- Evaluate Pairwise Distance metrics (minimum, maximum, average) for each sample
+- Output the data to a summary .csv (Random_Sampling_Performance_Standardized.csv)
