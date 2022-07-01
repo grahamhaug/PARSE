@@ -1,0 +1,21 @@
+Python scripts for parsing PubChem data from CSV (PubChem_Sulfinates_InputData.csv)
+
+Parsing_PubChem_Sulfinates.py
+- Parses incoming SMILEs data for sulfinate chemical flags
+- Removes sulfinates over 1000 MU
+- Drops isotopes/multicomponents/metals/known bad FGs/wonky strings
+- Replaces sulfinate chemical flags with "*" to designate joints
+- Ensures no duplicate SMILEs are present in final set
+- outputs a CSV containing processed SMILEs data (Processed_PubChem_Sulfinates.csv)
+
+Functions_for_parsing.py
+- Accessory functions read/required by Parsing_PubChem_Sulfinates.py
+- Requires BotchScore.py (modified from Dr. Forli group's work: https://github.com/forlilab/bottchscore)
+
+Calculate_Complexity_Descriptors.py
+- Calculates MW, FSP3, and Cm for a list of SMILEs
+- Outputs a csv containing the calculated parameters for each SMILE (Processed_PubChem_Sulfinates_Properties.csv) 
+
+Functions_for_PropCalc.py
+- Functions read/required by Calculate_Complexity_Descriptors.py
+- Requires BotchScore.py (modified from Dr. Forli group's work: https://github.com/forlilab/bottchscore)
