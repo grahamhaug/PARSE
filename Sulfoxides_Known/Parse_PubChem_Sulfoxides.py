@@ -37,7 +37,7 @@ pre = len(sulfoxides)
 #drop duplicate SMILEs using InchiKeys
 sulfoxides = drop_duplicate_smiles(sulfoxides)
 
-#remove anything over 1500 mw
+#remove anything over 1938 mw
 processed_structures = remove_high_mw(sulfoxides, 1938)
 
 #count the remaining sulfoxides
