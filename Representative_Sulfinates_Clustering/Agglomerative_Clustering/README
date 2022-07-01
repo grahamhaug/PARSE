@@ -1,1 +1,15 @@
-holder
+Python scripts for performing Hierarchical Agglomerative Clustering for selection of 27 representative sulfinates
+
+ClusterValidation_sel27_Agglom_minmaxed.py
+- Perform agglomerative clustering for 27 sulfinates using normalized scaling
+- Select the sulfinates closest to the cluster centroids (minimum Euclidean distances)
+- Plot an image of the clustering (Agglom_n27_minmaxed_sulfinates.png)
+- Output the selected sulfinates to a csv file (selected_sulfinates_minmax.csv)
+- Output an image of the selected sulfinates (agglom_minimax.png)
+
+ClusterValidation_sel27_Agglom_standardized.py
+- Perform agglomerative clustering for 27 sulfinates using standard scaler
+- Select the sulfinates closest to the cluster centroids (minimum Euclidean distances)
+- Plot an image of the clustering (Agglom_n27_standardized_sulfinates.png)
+- Output the selected sulfinates to a csv file (selected_sulfinates_standardized.csv)
+- Output an image of the selected sulfinates (agglom_standardized.png)
