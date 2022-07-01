@@ -1,15 +1,21 @@
-Python scripts for performing Hierarchical Agglomerative Clustering for selection of 27 representative sulfinates
+Python scripts for performing repeated runs of K-Means clustering for selection of 27 representative sulfinates
 
-ClusterValidation_sel27_Agglom_minmaxed.py
-- Perform agglomerative clustering for 27 sulfinates using normalized scaling
+ClusterValidation_sel27_KMeans_minmaxed.py
+- Perform 50 runs of K-Means clustering for 27 sulfinates using normalized scaling
+- Report Silhouette scores for each run
 - Select the sulfinates closest to the cluster centroids (minimum Euclidean distances)
-- Plot an image of the clustering (Agglom_n27_minmaxed_sulfinates.png)
-- Output the selected sulfinates to a csv file (selected_sulfinates_minmax.csv)
-- Output an image of the selected sulfinates (agglom_minimax.png)
+- Calculate min/max/avg pairwise distances for selected sulfinates
+- Plot an image of the clustering (kmeans_n27_minmaxed_sulfinates_15.png)
+- Output the selected sulfinates to a csv file (selected_sulfinates_15_minmax.csv)
+- Output an image of the selected sulfinates (kmeans_minimax-15.png)
+- Output a summary of the clustering performance across repeated runs (KMeans_Sampling_Performance-minimaxed.csv)
 
-ClusterValidation_sel27_Agglom_standardized.py
-- Perform agglomerative clustering for 27 sulfinates using standard scaler
+ClusterValidation_sel27_KMeans_standardized.py
+- Perform 50 runs of K-Means clustering for 27 sulfinates using standard scaler
+- Report Silhouette scores for each run
 - Select the sulfinates closest to the cluster centroids (minimum Euclidean distances)
-- Plot an image of the clustering (Agglom_n27_standardized_sulfinates.png)
-- Output the selected sulfinates to a csv file (selected_sulfinates_standardized.csv)
-- Output an image of the selected sulfinates (agglom_standardized.png)
+- Calculate min/max/avg pairwise distances for selected sulfinates
+- Plot an image of the clustering (kmeans_n27_standardized_sulfinates_5.png)
+- Output the selected sulfinates to a csv file (selected_sulfinates_5_standardized.csv)
+- Output an image of the selected sulfinates (kmeans_standardized-5.png)
+- Output a summary of the clustering performance across repeated runs (KMeans_Sampling_Performance-standardized.csv)
