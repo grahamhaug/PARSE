@@ -1,6 +1,6 @@
 Python scripts for parsing PubChem data from CSV (PubChem_Sulfoxides_InputData.csv)
 
-Parsing_PubChem_Sulfoxidess.py
+Parsing_PubChem_Sulfoxides.py
 - Parses incoming SMILEs data for sulfoxide chemical flags
 - Removes sulfoxides over 1938 MU
 - Drops isotopes/multicomponents/metals/known bad FGs/wonky strings
