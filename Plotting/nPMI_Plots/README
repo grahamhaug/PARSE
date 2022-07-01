@@ -1,0 +1,14 @@
+Python scripts for calculating normalized Principle Moments of Inertia and subsequently plotting them
+- See: Sauer, W. H. B.; Shwarz, M. K.; Molecular Shape Diversity of Combinatorial Libraries: A 
+       Prerequisite for Broad Bioactivity. J. Chem. Inf. Comput. Sci. 2003, 43, 987–1003. 
+       
+CalculateNormalizePrincipleMomentsInertia.py
+- Calculate first two NPRs for a series of data
+- outputs many CSVs which can be combined with csvstitcher.py in /tools (or appended with Pandas)
+- Quite time-consuming calculation for larger datasets (better to calculate independently for each set,
+  as was done in Calc_Generated_PMI.py for the set of generated sulfoxides)
+- Embedding of molecules with RDKit is a potential point of failure - script contains a catch to omit 
+  molecules which can't be embedded (these return '-1'). Rare that these occur (~2 out of 10k or so). 
+
+PlotNormalizedPrincipleMomentsInertia.py
+- Creates a 3-pointed Linear-Sphere-Disk plot for analysis of molecular shape
