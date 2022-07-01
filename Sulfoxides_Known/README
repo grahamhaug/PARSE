@@ -4,7 +4,6 @@ Parsing_PubChem_Sulfoxidess.py
 - Parses incoming SMILEs data for sulfoxide chemical flags
 - Removes sulfoxides over 1938 MU
 - Drops isotopes/multicomponents/metals/known bad FGs/wonky strings
-- Replaces sulfinate chemical flags with "*" to designate joints
 - Ensures no duplicate SMILEs are present in final set
 - outputs a CSV containing processed SMILEs data (Processed_PubChem_Sulfinates.csv)
 
