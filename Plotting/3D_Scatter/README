@@ -1,0 +1,4 @@
+Python scripts for plotting 3D scatterplots using matplotlib
+- points are colored using Gaussian KDE/density
+- Colorbars can be removed or located above/to the left of the plots
+- Colorbars can be generated on their own using colorbars.py
