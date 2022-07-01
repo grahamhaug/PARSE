@@ -1,1 +1,11 @@
-f
+Python scripts for generating sulfoxides from prepared datasets of sulfinates and carboxylic acids
+
+iterative_sulfoxide_maker.py
+- Combines prepared sulfinates (selected_sulfinates_15.csv) and prepared acids
+  (sampled_acids_Properties.csv)
+- Joins the above at "*" joints to produce sulfoxides
+- Outputs a csv of generated sulfoxides which serves as input for Calculate_Complexity_Descriptors.py
+
+helper_functions.py
+- functions required by iterative_sulfoxide_maker.py for operation
+
