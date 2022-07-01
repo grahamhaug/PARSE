@@ -50,5 +50,4 @@ outData['FSP3'] = molFSP3
 outData['Cm'] = molCm
 outData.to_csv(f'{chop_name}_Properties.csv', index=False)
 
-# write mols to [an] SD file(s) for visualization
-write_to_sdf(incoming_smiles)
+
