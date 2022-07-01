@@ -20,4 +20,4 @@ Functions_for_PropCalc.py
 - Requires BotchScore.py (modified from Dr. Forli group's work: https://github.com/forlilab/bottchscore)
 
 Sulfinate data was manually examined and bad structures omitted (viets_omits.csv). For other compounds,
-this process was automated. 
+this process was automated. Final sulfinates are contained in Final_sulfinates.csv
