@@ -1,1 +1,28 @@
+Python scripts for parsing PubChem data from CSV (PubChem_Sulfoxides_InputData.csv)
 
+Parsing_PubChem_CAs.py
+- Parses incoming SMILEs data for Carboxylic Acid chemical flags
+- Removes CAs over 1000 MU
+- Drops isotopes/multicomponents/metals/known bad FGs/wonky strings
+- Ensures no duplicate SMILEs are present in final set
+- outputs two CSV containing processed SMILEs data:
+    MonoSubs_PubChem_acids.csv (containing a single CA)
+    MultiSubs_Pubchem_acids.csv (containing fragments with multiple substituted CAs)
+
+Functions_for_parsing.py
+- Accessory functions read/required by Parsing_PubChem_CAs.py
+- Ensures that only Carboxylic Acids are substituted (No esters)
+- For each carboxylic acid, determine which atom the CA is bound to
+- Check that the bound atom is a Carbon
+- Check that the bound Carbon is SP3 hybridized (saturated)
+- Only replaces CAs that are bound to SP3 carbons
+
+Calculate_Complexity_Descriptors.py
+- Calculates MW, FSP3, and Cm for a list of SMILEs
+- Outputs a csv containing the calculated parameters for each SMILE (Processed_PubChem_Sulfoxides_Properties.csv) 
+
+Functions_for_PropCalc.py
+- Functions read/required by Calculate_Complexity_Descriptors.py
+- Requires BotchScore.py (modified from Dr. Forli group's work: https://github.com/forlilab/bottchscore)
+
+Only MonoSubstituted carboxylic acids were utilized for the generation of sulfoxides. 
