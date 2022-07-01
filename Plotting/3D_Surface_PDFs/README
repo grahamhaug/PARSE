@@ -1,0 +1,5 @@
+Python scripts for plotting 3D surface plots of Probability Density Function estimates
+- 3D surface plots rendered using matplotlib
+- PDF estimated using Gaussian KDE; density can be increased for smoother surfaces (increased time cost)
+- Images can be rendered separately for each dataset or in tandem with baseline removed
+- Scripts for generating examples of KDE plots are in the /tools directory
