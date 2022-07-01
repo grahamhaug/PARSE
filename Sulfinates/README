@@ -10,7 +10,6 @@ Parsing_PubChem_Sulfinates.py
 
 Functions_for_parsing.py
 - Accessory functions read/required by Parsing_PubChem_Sulfinates.py
-- Requires BotchScore.py (modified from Dr. Forli group's work: https://github.com/forlilab/bottchscore)
 
 Calculate_Complexity_Descriptors.py
 - Calculates MW, FSP3, and Cm for a list of SMILEs
