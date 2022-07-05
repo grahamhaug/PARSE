@@ -1,4 +1,5 @@
-# ChemDataSci
+# PARSE
+Prospective Analysis of Reaction ScopE
 Python tools for mapping chemical space.
 Technical Supplemental Information for DOI: 
 
