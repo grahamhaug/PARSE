@@ -66,6 +66,70 @@ def pan_for_residues(smiles_list, chem_flags):
 				sulfinates.append(fragment)
 	return sulfinates
 
+def drop_canon_smiles(smile_list):
+    """
+    - Test to see how RDKit's CanonSmiles() function works after reviewer suggestion
+    - This function is ~2x faster than the previous 'drop_duplicate_smiles'
+    - likely because no need to convert to RDKit mol object first
+    """
+
+    print(f'\nChecking for duplicate SMILEs using RDKit CanonSmiles...')
+
+    pre = len(smile_list)
+    
+    frowns = []
+    canons = [] #boom, ignore the spelling
+    #work in batches of ~10,000 for memory
+    chunked_list = process_in_batches(smile_list)   
+    num_chunks = len(chunked_list)
+    print(f'Processing CanonSmiles data in {num_chunks} batches...')
+    batch_num = 1
+    for chunk in chunked_list:
+        print(f'\tBatch {batch_num}')
+        for smile in chunk:
+            #convert the mol to canonical SMILE
+            canon = Chem.CanonSmiles(smile)
+
+            #check that it's actually converted to something readable
+            if canon is None:
+                frowns.append(canon)
+                canons.append(np.nan)
+            else:
+                #add the canonical smile to list of canons
+                canons.append(canon)
+
+        batch_num += 1
+
+    #output a list of the canonical smiles
+    canon_smiles = pd.DataFrame(columns=['SMILES', 'Canon_SMILES'])
+    canon_smiles['SMILES'] = smile_list
+    canon_smiles['Canon_SMILES'] = canons
+
+    #check length of df first
+    pre_length = len(canon_smiles['SMILES'])
+
+    #remove any of the inchis that were non-convertible smiles (NaNs)
+    parsed_df = canon_smiles.dropna().reset_index(drop=True)
+    
+    #remove any duplicate residues based on CanonSmiles match
+    parsed_df = parsed_df.drop_duplicates(subset='Canon_SMILES')
+
+    #parsed_df = parsed_df.reset_index(drop=True)
+    post_length = len(parsed_df['SMILES'])
+    duplicates = pre_length - post_length
+    print(f'Duplicate Canon_SMILES removed: {duplicates}')
+
+    if len(frowns) >= 1:
+        print(f'{len(frowns)} Unreadable SMILES (FROWNs):')
+        for frown in frowns:
+            print(f'\t{frown}')
+
+    #parsed_smiles = parsed_df[convert_df['SMILEs'].notnull()]
+    smiles_list = parsed_df['SMILES'].to_list()
+
+    #output a csv
+    parsed_df.to_csv(f'chopped_smiles.csv', index=False)
+    return smiles_list
 
 def drop_duplicate_smiles(smile_list):
 
