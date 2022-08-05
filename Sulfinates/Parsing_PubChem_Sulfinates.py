@@ -1,5 +1,5 @@
 import pandas as pd
-from Functions_for_Parsing import pan_for_residues, drop_duplicate_smiles	
+from Functions_for_Parsing import pan_for_residues, drop_canon_smiles	
 from Functions_for_Parsing import remove_high_mw, remove_charged_smiles
 from Functions_for_Parsing import remove_wonky_smiles, remove_wonky_FGs 
 from Functions_for_Parsing import subs_chem_flags
@@ -49,7 +49,7 @@ processed_structures = remove_wonky_smiles(processed_structures)
 
 ### Do a final check before substitution ### 
 #drop duplicate SMILEs using InchiKeys
-processed_structures = drop_duplicate_smiles(processed_structures)
+processed_structures = drop_canon_smiles(processed_structures)
 
 
 ### Preparing to substitute sulfoxides ###
