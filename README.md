@@ -29,3 +29,6 @@ Finally, the data can be presented in plots of the first two normalized Principa
 
 ![image](https://user-images.githubusercontent.com/49004818/172220219-1a57c2c2-ddbc-4a6e-95f7-8d5087132b79.png)
 
+Per reviewers' comments: 
+- Swapped from eliminating duplicate SMILES via InChI keys to using RDkit's built in Chem.CanonSmiles() function. It's about 2x faster after testing (avoids having to use Chem.MolFromSmiles() to preconvert to mol objects). Same output so a net benefit. 
+
