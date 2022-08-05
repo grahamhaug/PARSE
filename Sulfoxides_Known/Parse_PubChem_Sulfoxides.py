@@ -1,5 +1,5 @@
 import pandas as pd
-from Functions_for_Parsing import pan_for_residues, drop_duplicate_smiles	
+from Functions_for_Parsing import pan_for_residues, drop_canon_smiles	
 from Functions_for_Parsing import remove_high_mw, remove_charged_smiles
 from Functions_for_Parsing import remove_wonky_smiles#, subs_chem_flags
 
@@ -35,7 +35,7 @@ sulfoxides = pan_for_residues(incoming_smiles, sulf_flags)
 pre = len(sulfoxides)
 
 #drop duplicate SMILEs using InchiKeys
-sulfoxides = drop_duplicate_smiles(sulfoxides)
+sulfoxides = drop_canon_smiles(sulfoxides)
 
 #remove anything over 1938 mw
 processed_structures = remove_high_mw(sulfoxides, 1938)
