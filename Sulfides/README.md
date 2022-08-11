@@ -12,7 +12,7 @@ Oxidize confirmed sulfides to sulfoxides using Reaction SMARTS:
 - Performs SMARTS substructure search to confirm each structure contains at least one sulfide (does not match thiols, disulfides, nor thiophenes).  
 - Batches the above operations to not crash local PCs due to memory  
 - Returns a .csv file containing canonical SMILES for non-duplicate sulfides  
-- Has dependencies for functions in Functions_for_Parsing.py
+- Has dependencies for functions in Functions_for_Parsing.py  
 ![image](https://user-images.githubusercontent.com/49004818/184212482-d9021d20-f924-40df-a2d0-d993e01ac6b9.png)  
 
 *Oxidize_Sulfides_SMARTS.py*
