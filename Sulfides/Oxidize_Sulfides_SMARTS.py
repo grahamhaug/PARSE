@@ -140,8 +140,8 @@ def oxidize_sulfides(smiles_list, rxn_oxidize_sulfide,csv_name):
         batch_num += 1      
 
     #output remaining sulfoxides to a csv
-    outDatac = pd.DataFrame(columns=['SMILEs'])
-    outDatac['SMILEs'] = products
+    outDatac = pd.DataFrame(columns=['SMILES'])
+    outDatac['SMILES'] = products
     outDatac.to_csv(f'{csv_name}_last.csv', index=False, header=True)
 
 #timeit
