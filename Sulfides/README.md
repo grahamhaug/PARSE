@@ -1,7 +1,7 @@
 #### Python scripts for the oxidation of sulfides to sulfoxides. 
 
 
-##### Parse_PubChem_Sulfides.py
+*Parse_PubChem_Sulfides.py*
 -------------------------------
 -Process isosmiles downloaded from Pubchem.  
 -Splits multicomponents, removes bad FGs, removes SMILES with nonzero net charge, removes SMILES with MW > 1000.  
