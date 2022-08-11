@@ -18,7 +18,7 @@ Oxidize confirmed sulfides to sulfoxides using Reaction SMARTS:
 -------------------------------
 -Oxidize sulfides SMILES to sulfoxide SMILES using Reaction SMARTS  
 -Processes data in batches of ~10,000 SMILES for memory  
--Outputs a series of .csv files containing the resulting sulfoxide SMILES (ex: "oxidized_sulfides.csv")
+-Outputs a series of .csv files containing the resulting sulfoxide SMILES (ex: "oxidized_sulfides.csv")  
 -A sample .csv is provided in the current directory ("sulfide_SMILES.csv")  
 ![image](https://user-images.githubusercontent.com/49004818/184225353-41fbcf7f-f6a1-49e5-abb7-ebeb1307d80b.png)
 
