@@ -130,7 +130,7 @@ def oxidize_sulfides(smiles_list, rxn_oxidize_sulfide,csv_name):
         #write the products to a csv
         csv_label = f"{csv_name}_{batch_num}"
         outData = pd.DataFrame()
-        outData['SMILEs'] = products
+        outData['SMILES'] = products
         outData.to_csv(f'{csv_label}.csv', index=False, header=True)
         print(f'\t\t{len(products)} Sulfoxides written to {csv_label}.csv')
 
