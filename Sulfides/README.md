@@ -1,7 +1,8 @@
 #### Python scripts for the oxidation of sulfides to sulfoxides. 
 
 
-##### Parse_PubChem_Sulfides.py  
+##### Parse_PubChem_Sulfides.py
+-------------------------------
 -Process isosmiles downloaded from Pubchem.  
 -Splits multicomponents, removes bad FGs, removes SMILES with nonzero net charge, removes SMILES with MW > 1000.  
 -Performs SMARTS substructure search to confirm each structure contains at least one sulfide (does not match thiols, disulfides, nor thiophenes).  
