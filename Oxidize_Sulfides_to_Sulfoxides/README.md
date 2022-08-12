@@ -1,15 +1,15 @@
 #### Python scripts for the oxidation of sulfides to sulfoxides (at scale).
-SMARTS substructure search for sulfides (exclude thiols, disulfides, thiophene derivatives):
-![image](https://user-images.githubusercontent.com/49004818/184214576-20cecf8b-39e9-43a9-a098-bdda980b4d3c.png)
+SMARTS substructure search for sulfides (exclude thiols, disulfides, thiophene derivatives, thioesters):
+![image](https://user-images.githubusercontent.com/49004818/184387077-8680aaa2-f22c-4950-9893-2cf3f3271874.png)
 
 Oxidize confirmed sulfides to sulfoxides using Reaction SMARTS:
-![image](https://user-images.githubusercontent.com/49004818/184214668-0928a15a-4067-48ba-9776-04873081e246.png)
+![image](https://user-images.githubusercontent.com/49004818/184387147-774e622c-6269-4b6c-a056-dfd77476d885.png)
 
 *Parse_PubChem_Sulfides.py*
 -------------------------------
 - Process isosmiles downloaded from Pubchem.  
 - Splits multicomponents, removes bad FGs, removes SMILES with nonzero net charge, removes SMILES with MW > 1000.  
-- Performs SMARTS substructure search to confirm each structure contains at least one sulfide (does not match thiols, disulfides, nor thiophenes).  
+- Performs SMARTS substructure search to confirm each structure contains at least one sulfide (does not match thiols, disulfides, thioesters, nor thiophenes).  
 - Batches the above operations to not crash local PCs due to memory  
 - Returns a .csv file containing canonical SMILES for non-duplicate sulfides  
 - Has dependencies for functions in Functions_for_Parsing.py  
