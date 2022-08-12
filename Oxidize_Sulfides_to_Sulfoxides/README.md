@@ -1,4 +1,4 @@
-#### Python scripts for the oxidation of sulfides to sulfoxides (at scale).
+#### Python scripts for the oxidation of sulfides to sulfoxides (at scale) using Reaction SMARTS.
 SMARTS substructure search for sulfides (exclude thiols, disulfides, thiophene derivatives, thioesters):
 ![image](https://user-images.githubusercontent.com/49004818/184387077-8680aaa2-f22c-4950-9893-2cf3f3271874.png)
 
