@@ -13,7 +13,7 @@ Selectively oxidize confirmed sulfides to sulfoxides using Reaction SMARTS:
 - Batches the above operations to not crash local PCs due to memory when working with large datasets (tested up to ~5 million structures)   
 - Returns a .csv file containing canonical SMILES for non-duplicate sulfides  
 - Has dependencies for functions in Functions_for_Parsing.py  
-![image](https://user-images.githubusercontent.com/49004818/184212482-d9021d20-f924-40df-a2d0-d993e01ac6b9.png)  
+![image](https://user-images.githubusercontent.com/49004818/184392285-1c9d4b3f-073f-4e58-bc0a-83e97dd75420.png)
 
 *Oxidize_Sulfides_SMARTS.py*
 -------------------------------
