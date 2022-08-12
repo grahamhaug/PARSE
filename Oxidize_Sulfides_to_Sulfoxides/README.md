@@ -21,7 +21,7 @@ Selectively oxidize confirmed sulfides to sulfoxides using Reaction SMARTS:
 - Processes data in batches of ~10,000 SMILES for memory  
 - Outputs a series of .csv files containing the resulting sulfoxide SMILES (ex: "oxidized_sulfides.csv")  
 - A sample .csv is provided in the current directory ("sulfide_SMILES.csv")  
-![image](https://user-images.githubusercontent.com/49004818/184225353-41fbcf7f-f6a1-49e5-abb7-ebeb1307d80b.png)
+![image](https://user-images.githubusercontent.com/49004818/184449161-a2b6f28a-4571-4572-90d3-e986cd00e8d8.png)
 
 *Calculate_Complexity_Descriptors.py*
 -------------------------------------
