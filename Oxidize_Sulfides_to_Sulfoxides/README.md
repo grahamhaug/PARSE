@@ -2,7 +2,7 @@
 SMARTS substructure search for sulfides (exclude thiols, disulfides, thiophene derivatives, thioesters):
 ![image](https://user-images.githubusercontent.com/49004818/184387077-8680aaa2-f22c-4950-9893-2cf3f3271874.png)
 
-Oxidize confirmed sulfides to sulfoxides using Reaction SMARTS:
+Selectively oxidize confirmed sulfides to sulfoxides using Reaction SMARTS:
 ![image](https://user-images.githubusercontent.com/49004818/184387147-774e622c-6269-4b6c-a056-dfd77476d885.png)
 
 *Parse_PubChem_Sulfides.py*
