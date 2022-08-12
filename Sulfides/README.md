@@ -7,7 +7,7 @@ Oxidize confirmed sulfides to sulfoxides using Reaction SMARTS:
 
 *Parse_PubChem_Sulfides.py*
 -------------------------------
-- Process isosmiles downloaded from Pubchem.  
+- Process isosmiles downloaded from Pubchem (Sample_Raw_Data.csv).    
 - Splits multicomponents, removes bad FGs, removes SMILES with nonzero net charge, removes SMILES with MW > 1000.  
 - Performs SMARTS substructure search to confirm each structure contains at least one sulfide (does not match thiols, disulfides, nor thiophenes).  
 - Batches the above operations to not crash local PCs due to memory  
