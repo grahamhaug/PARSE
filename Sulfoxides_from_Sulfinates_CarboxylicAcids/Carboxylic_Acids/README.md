@@ -8,5 +8,6 @@ SMARTS substructure search for Carboxylic Acids (excluding other carbonyl compou
 - Splits multicomponents, removes bad FGs, removes SMILES with nonzero net charge, removes SMILES with MW > 1000.  
 - Performs SMARTS substructure search to confirm each structure contains exactly one Carboxylic Acid (structures with multiple CAs are stored separately)    
 - Batches the above operations to not crash local PCs due to memory when working with large datasets (tested up to ~5 million structures)   
-- Returns a .csv file containing canonical SMILES for non-duplicate structures with a single valid Carboxylic Acid substructure   
 - Has dependencies for functions in Functions_for_Parsing.py 
+- Returns a .csv file containing canonical SMILES for non-duplicate structures with a single valid Carboxylic Acid substructure 
+- Output .csv SMILES combined with selected sulfinate SMILES to generate decarboxysulfoxidation-accessible sulfoxides 
