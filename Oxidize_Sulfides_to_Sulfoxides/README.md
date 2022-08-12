@@ -28,4 +28,5 @@ Selectively oxidize confirmed sulfides to sulfoxides using Reaction SMARTS:
 - Calculates MW, FSP3, and Cm chemical descriptors  
 - Has dependencies for Functions_for_PropCalc.py and BottchScore.py  
 - Outputs a .csv file containing structure Number, SMILES, MW, FSP3, and Cm data  
-- Example output: "oxidized_sulfides_Properties.csv"
+- Example output: "oxidized_sulfides_Properties.csv"  
+- Some OpenBabel memory printouts are likely but inoffensive in the scheme of things  
