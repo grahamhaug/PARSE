@@ -54,7 +54,7 @@ gen_plot = plt.scatter(gen_x1s, gen_y1s,
 
 #plot the sf data
 sf_plot = plt.scatter(sf_x1s, sf_y1s,
-            c='b', label='SciFinder',
+            c='b', label='PubChem',
             linewidths=0.1, alpha=0.7, s=65)
 
 
