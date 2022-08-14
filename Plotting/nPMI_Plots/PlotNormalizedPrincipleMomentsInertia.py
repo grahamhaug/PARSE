@@ -9,7 +9,7 @@ from matplotlib import pyplot as plt
 """
 
 ### Data Import ###
-### SciFinder Sulfoxide Data ###
+### Pubchem Sulfoxide Data ###
 sf_name = 'known_sulfoxide_nprs.csv'
 #pull in data as DF
 sf_df = pd.read_csv(f'{sf_name}')
