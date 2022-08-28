@@ -2,7 +2,7 @@
 Prospective Analysis of Reaction ScopE
 
 Python tools for mapping chemical space.
-Technical Supplemental Information for DOI: 
+Technical Supplemental Information for DOI: 10.1002/anie.202210525
 
 This repo contains the Python code and data for reproducing the results within the above article. Each python script contains details for use and sample output files.
 
